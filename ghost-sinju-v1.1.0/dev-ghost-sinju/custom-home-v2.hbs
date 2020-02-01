@@ -1,0 +1,21 @@
+{{!< default}}
+<main class="main-content-area section-padding-bottom" >
+	<section class="banner-area">
+		<div class="container">
+		   {{> "slider"}}
+		</div>
+	</section>
+	<section class="blog-area blog-variation">
+		<div class="container infinite-scroll">
+		{{#get "posts" limit="10" filter="featured:false" include="authors,tags"}}		
+         {{#foreach posts}}
+         {{#unless featured}}
+         <div class="row post-style1 infinite-post " data-aos="fade-up">
+            {{> "post_loop"}}
+         </div>
+         {{/unless}}
+         {{/foreach}}
+         {{/get}}
+		</div>
+	</section>
+</main>
