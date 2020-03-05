@@ -1,7 +1,7 @@
 {
 	"name": "ghost-sinju",
-	"version": "1.1.0",
-	"description": "Presonal Blogging Theme For Ghost",
+	"version": "1.0.0",
+	"description": "GLG Presbytery Template",
 	"demo": "https://ghost-sinju.themeix.com",
 	"engines": {
 		"ghost": ">=2.0.0",
